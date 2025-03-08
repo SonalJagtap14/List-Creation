@@ -1,10 +1,13 @@
 {
+  "homepage": "http://SonalJagtap14.github.io/List-Creation",
   "name": "list-creation-app",
   "version": "1.0.0",
   "description": "A React application for list creation and management",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
